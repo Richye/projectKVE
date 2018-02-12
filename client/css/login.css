@@ -1,6 +1,7 @@
 #login-form{
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
+  border-radius: 10px;
 }
 
 h4{
@@ -8,7 +9,7 @@ h4{
 }
 
 div.container{
-  margin-top: 13%;
+  margin-top: 10%;
 }
 
 div.password-restore{
