@@ -1,1 +1,34 @@
 /* CSS declarations go here */
+div.footer-copyright{
+  text-align: center;
+}
+h4, h5{
+  text-align: center;
+}
+
+#error404{
+  text-align: center;
+  margin-top: 15%;
+}
+hr{
+  border-width: 2px;
+  border-color: #0d47a1;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+div.social{
+  display: block;
+}
+a.social{
+  filter: invert(100%);
+  transition: 1.5s;
+}
+
+a.social :hover{
+  opacity: 0.7;
+  transition: 1s;
+}
