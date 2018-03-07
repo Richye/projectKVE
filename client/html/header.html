@@ -1,13 +1,18 @@
 <template name="Header">
-  <header>
-    <nav>
-      <div class="nav-wrapper blue darken-3 thin">
-        <a href="/" class="brand-logo center">KVE Project</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="/login">Login</a></li>
-          <li><a href="/overview">Darba pārskats</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav class="light-blue darken-2">
+    <a href="/" class="brand-logo center thin">KVE Project</a>
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <div class="light-blue darken-4 thin">
+            <a href="/profile"><i class="material-icons left white-text">person_outline</i>
+              <span class="white-text name">Inguna Pastare</span>
+            </a>
+          </div>
+        </li>
+        <li><a href="/"><i class="material-icons left">home</i>Sākums</a></li>
+        <li><a href="/overview"><i class="material-icons left">note_add</i>Pievienot darba pārskatu</a></li>
+        <li><a href="#"><i class="material-icons left">exit_to_app</i>Iziet</a></li>
+      </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+  </nav>
 </template>
