@@ -4,9 +4,7 @@
     <h5>Profesionālās vidējās izglītības nodaļas</h5>
     <h5>Pedagoga darba pārskats</h5>
     <hr>
-    <a class="btn-floating btn-large waves-effect waves-light increment"><i class="material-icons">delete</i></a><br><br>
-  <!-- <button class="increment">Delete</button> -->
-
+    <br>
     <form class="new-resolution">
       <div class="input-field col s6">
         <input id="text" type="text">
@@ -16,7 +14,10 @@
       <input type="text" class="validate" name="text2">
       <label for="text2">Mācāmie priekšmeti</label>
     </div> -->
-    <h5>Programmas veidi</h5>
+    <h5>Mācību priekšmeti</h5>
+    <div class="info">
+      <span class="red-text text-darken-4">Prototipversijā ir pievienoti tikai mācību priekšmeti priekš grāmatvedības un multimediju dizaina.</span>
+    </div><br>
             <!--Grāmatvedība -->
     <strong>Grāmatvedība</strong>
       <div class="input-field col s6">
@@ -62,7 +63,7 @@
         </select>
       </div><br>
 
-          <!-- Komerczinības -->
+          <!-- Multimediju dizains -->
       <strong>Multimediju dizains</strong>
         <div class="input-field col s6">
           <select multiple>
@@ -157,44 +158,58 @@
 
       <strong>2. Metodiskais darbs</strong>
       <br>
-    <label for="text11">Metodiskā materiāla nosaukums</label>
-    <input type="text" placeholder="Ievadīt tekstu" name="text11">
-    <label for="text12">Veids</label>
-    <input type="text" placeholder="Ievadīt tekstu" name="text12">
-    <label for="text13">Pielietojums</label>
-    <input type="text" placeholder="Ievadīt tekstu" name="text13">
+      <div class="input-field col s6">
+        <input id="text11" type="text">
+        <label for="text11">Metodiskā materiāla nosaukums</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="text12" type="text">
+        <label for="text12">Veids</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="text13" type="text">
+        <label for="text13">Pielietojums</label>
+      </div>
     <strong>3. Audzēkņu gatavošanās olimpiādēm vai konkursiem (gan ārpusskolas, gan nodaļā)</strong>
     <br>
-        <p>
-        <input type="checkbox" id="checkbox1" checked="{{checked}}" class="toggle-checked" />
+      <p>
+        <input type="checkbox" id="checkbox1" />
         <label for="checkbox1">ieguva godalgotas vietas</label>
-        <input type="text" name="checkbox1text" placeholder="Nosaukums, rezultāts">
-        </p>
-        <p>
-        <input type="checkbox" id="checkbox2" checked="{{checked}}" class="toggle-checked"/>
+        <input id="checkbox1text" type="text" placeholder="Nosaukums, rezultāts">
+      </p>
+      <p>
+        <input type="checkbox" id="checkbox2" />
         <label for="checkbox2">piedalījās olimpiādē, bet vietu nav</label>
-        <input type="text" name="checkbox2text" placeholder="Nosaukums, rezultāts">
-        </p>
-        <p>
-        <input type="checkbox" id="checkbox3" checked="{{checked}}" class="toggle-checked"/>
+        <input id="checkbox2text" type="text" placeholder="Nosaukums, rezultāts">
+      </p>
+      <p>
+        <input type="checkbox" id="checkbox3" />
         <label for="checkbox3">olimpiāde vai konkurss notika, bet audzēkņus negatavoju</label>
-        <input type="text" name="checkbox3text" placeholder="Nosaukums, rezultāts">
-        </p>
-        <p>
-        <input type="checkbox" id="checkbox4" checked="{{checked}}" class="toggle-checked"/>
+        <input id="checkbox3text" type="text" placeholder="Nosaukums, rezultāts">
+      </p>
+      <p>
+        <input type="checkbox" id="checkbox4" />
         <label for="checkbox4">negatavoju, jo olimpiāde vai konkurss nebija plānots</label>
-        <input type="text" name="checkbox4text" placeholder="Nosaukums, rezultāts">
-        </p>
+        <input id="checkbox4text" type="text" placeholder="Nosaukums, rezultāts">
+      </p>
       <strong>4. Iesaistīšanās PVIN pasākumos</strong>
       <br>
-      <label for="text14">Pasākumi, kurus organizēju</label>
-      <input type="text" placeholder="Ievadīt tekstu" name="text14">
-      <label for="text15">Pasākumos iesaistījos, piedalījos ar idejām, iniciatīvu, ierosmi</label>
-      <input type="text" placeholder="Ievadīt tekstu" name="text15">
-      <label for="text16">Darīju, ko lika</label>
-      <input type="text" placeholder="Ievadīt tekstu" name="text16">
-      <label for="text17">Nepiedalījos un neorganizēju</label>
-      <input type="text" placeholder="Ievadīt tekstu" name="text17">
+      <div class="input-field col s6">
+        <input id="text14" type="text">
+        <label for="text14">Pasākumi, kurus organizēju</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="text15" type="text">
+        <label for="text15">Pasākumos iesaistījos, piedalījos ar idejām, iniciatīvu, ierosmi</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="text16" type="text">
+        <label for="text16">Darīju, ko lika</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="text17" type="text">
+        <label for="text17">Nepiedalījos un neorganizēju</label>
+      </div>
       <strong>5. Manas pedagoģiskās darbības:</strong>
       <br>
       <table>
@@ -219,7 +234,7 @@
       <p>Mani secinājumi par redzēto un dzirdēto:</p><input type="text" name="input61">
       <p>7. Vai uzskatāt, ka kolēģu nodarbību apmeklēšana paaugstina Jūsu profesionālo kvalifikāciju?</p>
       <p>
-     <input name="group1" type="radio" id="test1" class="with-gap" />
+     <input name="group1" type="radio" id="test1"/>
      <label for="test1">Jā</label>
      </p>
      <p>
@@ -233,22 +248,18 @@
           <td>Izpildīju (norādīt konkrēti)</td>
         </tr>
         <tr>
-          <td>  <textarea id="textarea8" class="materialize-textarea"></textarea></td>
-          <td>  <textarea id="textarea81" class="materialize-textarea"></textarea></td>
+          <td><textarea id="textarea8" class="materialize-textarea"></textarea></td>
+          <td><textarea id="textarea81" class="materialize-textarea"></textarea></td>
         </tr>
       </table>
       <p>9. Mani galvenie uzdevumi pedagoģiskās darba kvalitātes uzlabošanā nākamajā mācību gadā mācāmajā priekšmetā vai priekšmetos (obligāti jānorāda 1-2 uzdevumi, izmantojot 5.punkta vai citus pašvērtējuma aspektus):</p>
       <textarea id="textarea9" class="materialize-textarea"></textarea>
 
     <div class="center-align">
-    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-      <i class="material-icons left">send</i>
-    </button>
-  </div><br>
-    <!-- <input type="submit" value="submit" class="submit-main"/> -->
-    <div class="right-align">
-    <a class="waves-effect waves-light btn" href="#"><i class="material-icons left">exit_to_app</i>Logout</a>
-  </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Saglabāt
+        <i class="material-icons left">send</i>
+      </button>
+    </div><br>
   </form>
 </div>
 <script>
